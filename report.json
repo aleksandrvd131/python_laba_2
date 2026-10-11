@@ -1,0 +1,13 @@
+{
+  "total_events": 1,
+  "levels": {
+    "INFO": 1
+  },
+  "sources": {
+    "app": 1
+  },
+  "top_5_error_sources": [],
+  "first_timestamp": "2026-10-10T10:00:00",
+  "last_timestamp": "2026-10-10T10:00:00",
+  "skipped_lines": 0
+}
