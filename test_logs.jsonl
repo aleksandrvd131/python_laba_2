@@ -1,0 +1,4 @@
+{"timestamp": "2026-10-10T12:00:00", "level": "INFO", "source": "auth", "message": "Login success"}
+{"timestamp": "2026-10-10T12:05:00", "level": "ERROR", "source": "database", "message": "Connection lost"}
+{"timestamp": "битая дата", "level": "INFO", "source": "billing", "message": "Payment"}
+{"timestamp": "2026-10-10T12:15:00", "level": "CRITICAL", "source": "database", "message": "Out of memory"}

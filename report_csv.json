@@ -1,0 +1,20 @@
+{
+  "total_events": 2,
+  "levels": {
+    "INFO": 1,
+    "ERROR": 1
+  },
+  "sources": {
+    "gateway": 1,
+    "api": 1
+  },
+  "top_5_error_sources": [
+    {
+      "source": "api",
+      "count": 1
+    }
+  ],
+  "first_timestamp": "2026-10-10T08:00:00",
+  "last_timestamp": "2026-10-10T10:00:00",
+  "skipped_lines": 1
+}

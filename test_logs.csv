@@ -1,0 +1,4 @@
+timestamp,level,source,message
+2026-10-10T08:00:00,INFO,gateway,Started
+2026-10-10T09:00:00,WRONG_LEVEL,gateway,Unknown state
+2026-10-10T10:00:00,ERROR,api,Timeout 504

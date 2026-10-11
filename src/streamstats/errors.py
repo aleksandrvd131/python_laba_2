@@ -1,0 +1,42 @@
+class StreamStatsError(Exception):
+    def __init__(
+        self,
+        message: str,
+        *,
+        file_path: str | None = None,
+        line_number: int | None = None,
+    ):
+        super().__init__(message)
+        self.message = message
+        self.file_path = file_path
+        self.line_number = line_number
+
+    def __str__(self) -> str:
+        if self.file_path and self.line_number is not None:
+            return f"Файл '{self.file_path}', строка {self.line_number}: {self.message}"
+        if self.file_path:
+            return f"Файл '{self.file_path}': {self.message}"
+        return self.message
+
+
+class UnsupportedFormatError(StreamStatsError):
+    "Неподдерживаемый формат файла"
+
+
+class CLIConfigError(StreamStatsError):
+    "Ошибка параметров конфигурации CLI"
+
+
+class InvalidEventError(StreamStatsError):
+    "Некорректная событие"
+
+
+class InvalidTimestampError(StreamStatsError):
+    "Некорректная временная метка ISO 8601"
+
+
+Stream_stats_error = StreamStatsError
+Unsupported_format = UnsupportedFormatError
+Cli_config = CLIConfigError
+Invalid_event = InvalidEventError
+Invalid_time = InvalidTimestampError
